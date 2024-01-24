@@ -1,56 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey’s</title>
     <!-- daisyUi and tailwindcss -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<!-- google fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<!-- fontAwesome icons -->
-<script src="https://kit.fontawesome.com/8acf9ee4cf.js" crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- fontAwesome icons -->
+    <script src="https://kit.fontawesome.com/8acf9ee4cf.js" crossorigin="anonymous"></script>
+    <style>
+
+        *{
+            font-family: 'Manrope', sans-serif;
+        }
+
+    </style>
 </head>
+
 <body>
     <header class="max-w-7xl m-auto">
-<nav>
-    <div class="navbar mt-5 ">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        <!-- navbar starts from here  -->
+        <nav>
+            <div class="navbar mt-5 ">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content text-[#424247] mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <input type="button" value="Home"
+                                class="text-[#FF4240] focus:text-red-500 cursor-pointer focus:bg-gray-100 p-2 mr-3 rounded-md">
+                            <input type="button" value="About"
+                                class="focus:text-red-500 cursor-pointer focus:bg-gray-100 p-2 mr-3 rounded-md">
+                            <input type="button" value="Pages"
+                                class="focus:text-red-500 cursor-pointer focus:bg-gray-100 p-2 mr-3 rounded-md">
+                            <input type="button" value="Blog"
+                                class="focus:text-red-500 cursor-pointer focus:bg-gray-100 p-2 mr-3 rounded-md">
+                            <input type="button" value="Contact"
+                                class="focus:text-red-500 cursor-pointer focus:bg-gray-100 p-2 rounded-md">
+
+                        </ul>
+                    </div>
+                    <h3 class="btn btn-ghost md:text-4xl text-xl font-bold">Hockey<span class="text-[#FF4240]">'</span>s</h3>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal font-medium text-lg text-[#424247]  px-1">
+                        <input type="button" value="Home"
+                            class="text-[#FF4240] focus:text-red-500 cursor-pointer focus:bg-gray-100 p-2 mr-3 rounded-md">
+                        <input type="button" value="About"
+                            class="focus:text-red-500 cursor-pointer focus:bg-gray-100 p-2 mr-3 rounded-md">
+                        <input type="button" value="Pages"
+                            class="focus:text-red-500 cursor-pointer focus:bg-gray-100 p-2 mr-3 rounded-md">
+                        <input type="button" value="Blog"
+                            class="focus:text-red-500 cursor-pointer focus:bg-gray-100 p-2 mr-3 rounded-md">
+                        <input type="button" value="Contact"
+                            class="focus:text-red-500 cursor-pointer focus:bg-gray-100 p-2 rounded-md">
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <i class="fa-solid fa-magnifying-glass md:block hidden lg:  mr-4 text-2xl"></i>
+                    <button class="btn font-semibold text-white btn-error bg-[#FF4240]">Get Ticket</button>
+
+                </div>
             </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content text-[#424247] mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                <input type="button" value="Home" class= "text-[#FF4240] focus:text-red-500 cursor-pointer focus:bg-gray-100 p-2 mr-3 rounded-md">
-                <input type="button" value="About" class="focus:text-red-500 cursor-pointer focus:bg-gray-100 p-2 mr-3 rounded-md">
-                <input type="button" value="Pages" class="focus:text-red-500 cursor-pointer focus:bg-gray-100 p-2 mr-3 rounded-md">
-                <input type="button" value="Blog" class="focus:text-red-500 cursor-pointer focus:bg-gray-100 p-2 mr-3 rounded-md">
-                <input type="button" value="Contact" class="focus:text-red-500 cursor-pointer focus:bg-gray-100 p-2 rounded-md">
-          
-            </ul>
-          </div>
-          <h3 class="btn btn-ghost text-4xl font-bold">Hockey<span class="text-[#FF4240]">'</span>s</h3>
+        </nav>
+        <!-- banner section starts from here -->
+        <!-- slide1 -->
+        <div class="carousel w-full my-5 mb-10">
+            <div id="slide1" class="carousel-item relative h-[80vh] flex flex-col lg:flex-row w-full">
+                <img src="./Images/1.png" class="w-full h-[99%]" alt="" />
+
+
+                <div class=" sm:text-center absolute bottom-0 left-1/3 lg:left-0 p-4  ">
+                    <a href="#slide4" class="btn btn-circle bg-black text-white m-2">❮</a>
+                    <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+                </div>
+                <div
+                    class="p-7 w-5/12 absolute bottom-8 right-8 hidden lg:block bg-black rounded-xl text-white  items-end ">
+                    <h3 class="text-lg mb-3 font-bold">Meet all the heroes from the field</h3>
+                    <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
+                        in sit nullam proin. </p>
+                </div>
+
+            </div>
+
+            <!-- slide2 -->
+            <div id="slide2" class="carousel-item relative h-[80vh] flex flex-col lg:flex-row w-full">
+                <img src="./Images/2.png" class="w-full h-[99%]" alt="" />
+                <div class=" sm:text-center absolute bottom-0 left-1/3 lg:left-0 p-4">
+                    <a href="#slide1" class="btn btn-circle bg-black text-white m-2">❮</a>
+                    <a href="#slide3" class="btn btn-circle bg-black text-white">❯</a>
+                </div>
+                <div
+                    class="p-7 w-5/12 absolute bottom-8 right-8 hidden lg:block bg-black rounded-xl text-white   items-end ">
+                    <h3 class="text-lg mb-3 font-bold">Meet all the heroes from the field</h3>
+                    <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
+                        in sit nullam proin. </p>
+                </div>
+
+            </div>
+            <!-- slide3 -->
+            <div id="slide3" class="carousel-item relative h-[80vh] flex flex-col lg:flex-row w-full">
+                <img src="./Images/3.png" class="w-full h-[99%] rounded-lg" alt="" />
+                <div class="sm:text-center absolute bottom-0 left-1/3 lg:left-0 p-4">
+                    <a href="#slide2" class="btn btn-circle bg-black text-white m-2">❮</a>
+                    <a href="#slide4" class="btn btn-circle bg-black text-white">❯</a>
+                </div>
+                <div
+                    class="p-7 w-5/12 absolute bottom-8 right-8 hidden lg:block bg-black rounded-xl text-white   items-end ">
+                    <h3 class="text-lg mb-3 font-bold">Meet all the heroes from the field</h3>
+                    <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
+                        in sit nullam proin. </p>
+                </div>
+            </div>
+            <!-- slide4 -->
+            <div id="slide4" class="carousel-item relative h-[80vh] flex flex-col lg:flex-row w-full">
+                <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full h-[99%] rounded-lg"
+                    alt="" />
+                <div class="sm:text-center absolute bottom-0 left-1/3 lg:left-0 p-4">
+                    <a href="#slide3" class="btn btn-circle bg-black text-white m-2">❮</a>
+                    <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+                </div>
+                <div
+                    class="p-7 w-5/12 absolute bottom-8 right-8 hidden lg:block bg-black rounded-xl text-white   items-end ">
+                    <h3 class="text-xl mb-3 font-bold">Meet all the heroes from the field</h3>
+                    <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
+                        in sit nullam proin. </p>
+                </div>
+            </div>
         </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal font-medium text-lg text-[#424247]  px-1">
-            <input type="button" value="Home" class= "text-[#FF4240] focus:text-red-500 cursor-pointer focus:bg-gray-100 p-2 mr-3 rounded-md">
-            <input type="button" value="About" class="focus:text-red-500 cursor-pointer focus:bg-gray-100 p-2 mr-3 rounded-md">
-            <input type="button" value="Pages" class="focus:text-red-500 cursor-pointer focus:bg-gray-100 p-2 mr-3 rounded-md">
-            <input type="button" value="Blog" class="focus:text-red-500 cursor-pointer focus:bg-gray-100 p-2 mr-3 rounded-md">
-            <input type="button" value="Contact" class="focus:text-red-500 cursor-pointer focus:bg-gray-100 p-2 rounded-md">
-          </ul>
+        <div class="p-5 m-3 lg:hidden  sm:block bg-black rounded-xl text-white border-2  items-end ">
+            <h3 class="text-lg mb-3 font-bold">Meet all the heroes from the field</h3>
+            <p class="font">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
+                in sit nullam proin. </p>
         </div>
-        <div class="navbar-end">
-            <i class="fa-solid fa-magnifying-glass md:block hidden lg:  mr-4 text-2xl"></i>
-          <button class="btn font-semibold text-white btn-error bg-[#FF4240]">Get Ticket</button>
-          
-        </div>
-      </div>
-</nav>
+        <hr class="h-px border-t border-dashed   my-8 ">
     </header>
     <main>
 
@@ -58,6 +154,7 @@
     <footer>
 
     </footer>
-    
+
 </body>
+
 </html>
